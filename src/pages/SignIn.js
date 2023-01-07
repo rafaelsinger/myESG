@@ -27,6 +27,7 @@ const SignIn = () => {
     return (
     <div className="sign-in-background">
         <div className='sign-in-container'>
+            <img src="./myESGlogo.jpeg" alt="logo" width={200} height={200} />
             <h1 className="sign-in-header">Register:</h1>
             <div>
                 <input className="sign-in-input" type="text" onChange={(e) => setEmail(e.target.value)} id="email" placeholder='Email'/>
@@ -35,7 +36,7 @@ const SignIn = () => {
                 <input className="sign-in-input" type="password" onChange={(e) => setPassword(e.target.value)} id="password" placeholder='Password'/>
             </div>
             <button type="submit" className="submit-button" onClick={signUp}>Submit</button>
-            <div className='sign-in-redirect'>Already have an account?<a href="/signin">Sign in.</a></div>
+            <div className='sign-in-redirect'>Already have an account? <a href="/signin">Sign in.</a></div>
         </div>
     </div>
   )
